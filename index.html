@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="Lego">
+	<head>
+		<meta charset="UTF-8">
+
+		<title>Lego</title>
+			<!----- bootStrap ---->
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.6.0/underscore.js"></script>
+		<script src="js/library/angular/angular.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+		<script type="text/javascript" src="js/app/lego-app.js"></script>
+
+		<script type="text/javascript" src="js/factory/get-test-cases-data-factory.js"></script>
+		<script type="text/javascript" src="js/factory/get-toy-project-names-factory.js"></script>
+		<script type="text/javascript" src="js/factory/build-one-test-block-layout-factory.js"></script>
+		<script type="text/javascript" src="js/factory/build-two-test-block-layout-factory.js"></script>
+		<script type="text/javascript" src="js/factory/build-three-test-block-layout-factory.js"></script>
+		<script type="text/javascript" src="js/factory/build-four-test-block-layout-factory.js"></script>
+		<script type="text/javascript" src="js/factory/build-five-test-block-layout-factory.js"></script>
+		<script type="text/javascript" src="js/factory/build-six-test-block-layout-factory.js"></script>
+		
+		<script type="text/javascript" src="js/controller/lego-component-controller.js"></script>
+		<script type="text/javascript" src="js/controller/toy-block-controller.js"></script>
+
+		<script type="text/javascript" src="js/directive/lego-component-directive.js"></script>
+		<script type="text/javascript" src="js/directive/toy-block-directive.js"></script>
+		<script type="text/javascript" src="js/directive/group-block-directive.js"></script>
+		<script type="text/javascript" src="js/directive/test-block-directive.js"></script>
+	</head>
+
+	<body>
+		<div lego-component source=""></div>
+		
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+		<script type="text/javascript">
+		$("div#projectA").hide();
+		</script>
+	</body>
+</html>

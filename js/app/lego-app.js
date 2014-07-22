@@ -1,0 +1,1 @@
+var Lego = angular.module( "Lego", [ ] );
