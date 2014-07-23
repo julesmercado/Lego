@@ -15,7 +15,9 @@ Lego.directive( "toyBlock",
 				"</div>",
 
 			"link": function link( scope, element, attribute ){
-
+				element.css({
+					width: '55px'
+				});
 			}
 		}
 	}
