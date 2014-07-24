@@ -18,7 +18,7 @@ Lego.factory( "buildThreeTestBlockLayout",
 					var	testList = scope.testList;
 						
 					for( var index = 0; index < testList.length; index++ ){
-						var testBlock = $( "div#" + testList[ index ].testCaseID + "[ test-block ]", groupBlock );
+						var testBlock = $( "div#" + testList[ index ].id + "[ test-block ]", groupBlock );
 						
 						if ( index == 0 ){
 							x = "0px";

@@ -2,7 +2,7 @@ Lego.factory( "getToyProjectNames",
 	[
 		"$http",
 		function factory( $http ){
-			var url = "http://demo1290827.mockable.io/lego/get/toy/all";
+			var url = "localhost:8080";
 			
 			return function getToyProjectNames( callback ){
 				$http.get( url )
