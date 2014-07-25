@@ -39,10 +39,6 @@ Lego.directive( "groupBlock",
 					buildFiveTestBlockLayout( scope, element );
 					buildSixTestBlockLayout( scope, element );
 
-					//var testBlock = $( "div#" + testList[ index ].id + "[test-block]", groupBlock );
-					//testBlock.css({
-
-					//});
 				}								
 			};
 		}

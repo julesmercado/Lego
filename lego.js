@@ -65,34 +65,24 @@ var mongoDbGetTestResult = function mongoDbGetTestResult( query , collections , 
 };
 
 var contentType = function contentType( ext ){
-    var ct;
+    var content = {
+        '.html' : 'text/html',
+        '.json' : 'application/json',
+        '.css' : 'text/css',
+        '.js' : 'text/js'
+    };
 
-    switch (ext) {
-        case '.html':
-            ct = 'text/html';
-            break;
-        case '.css':
-            ct = 'text/css';
-            break;
-        case '.js':
-            ct = 'text/javascript';
-            break;
-        default:
-            ct = 'text/plain';
-            break;
-    }
-
-    return {'Content-Type': ct};
+    return {'Content-Type': content[ext]};
 };
 
 http.createServer(function (request , response) {
     var requestObject = url.parse( request.url , true );
     if(requestObject.pathname == "/"){
-        var staticFile = fs.readFileSync(__dirname + "/Lego/index.html");
-        response.writeHead(200, {"Content-Type": "text/html"});
+        var staticFile = fs.readFileSync(__dirname + "/index.html");
+        response.writeHead(200, contentType(".html"));
         response.end(staticFile);
     }else if(requestObject.pathname.match(/js\//i)){
-        var filepath = __dirname + "/Lego/" + request.url,
+        var filepath = __dirname + "/" + request.url,
             fileext = path.extname(filepath);
                 fs.readFile(filepath, function (err, content) {
                     if (err) {

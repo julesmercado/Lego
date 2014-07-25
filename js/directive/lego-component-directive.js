@@ -9,10 +9,11 @@ Lego.directive( "legoComponent",
 				"controller": "LegoComponentController",
 				
 				"template":
-					"<div ng-repeat='projectName in projectList' id='projectName'>" +
-						"<div toy-block project-name='projectName'></div>" +
+					"<div class='row'>" +
+						"<div class='col-sm-4 col-xs-3' ng-repeat='projectName in projectList' id='projectName'>" +
+							"<div toy-block project-name='projectName'></div>" +
+						"</div>" +
 					"</div>",
-				
 				"link": function link( scope, element, attribute ){
 					
 				}
