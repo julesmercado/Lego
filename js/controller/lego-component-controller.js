@@ -10,11 +10,12 @@ Lego.controller( "LegoComponentController",
 					}else{
 						$scope.projectList = data;	
 					}
+					//console.log($scope.projectList);
 				} );
 			$interval( function onInterval(){
 				
 				window.location.reload();
 
-			}, 60000 );
+			}, 6000000 );
 		}
 	] );

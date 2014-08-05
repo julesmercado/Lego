@@ -10,7 +10,7 @@ Lego.directive( "legoComponent",
 				
 				"template":
 					"<div class='row'>" +
-						"<div class='col-sm-4 col-xs-3' ng-repeat='projectName in projectList' id='projectName'>" +
+						"<div class='col-xs-3' ng-repeat='projectName in projectList'>" +
 							"<div toy-block project-name='projectName'></div>" +
 						"</div>" +
 					"</div>",

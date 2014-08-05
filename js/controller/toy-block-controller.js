@@ -2,7 +2,7 @@ Lego.controller( "toyBlockController",
 	[
 		"$scope",
 		"getTestCasesData",
-		function getToyProjectNames( $scope, getTestCasesData ){
+		function toyBlockController( $scope, getTestCasesData ){
 			getTestCasesData( $scope.projectName,
 				function onData( error, data ){
 					if ( error ){
@@ -10,6 +10,7 @@ Lego.controller( "toyBlockController",
 					}else{
 						$scope.groupList = data;
 					}
+					//console.log($scope.groupList[0]);
 				} );
 		}
 	] );

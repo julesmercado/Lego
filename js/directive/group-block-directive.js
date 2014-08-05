@@ -20,18 +20,18 @@ Lego.directive( "groupBlock",
 					"groupData": "="
 				},
 				"restrict": "A",
-				"controller": "", 
+				"controller": "LegoComponentController", 
 				
 				"template": 
 					"<div ng-repeat='test in testList'>" +
-						"<div id='{{test.testCaseID}}' test-block test-data='test'></div>" +
+						"<div id='{{test.id}}' test-block test-data='test'></div>" + 
 					"</div>",
 				
 				"link": function link( scope, element, attribute ){
 					scope.testList = scope.groupData;
 					testList = scope.testList;
 					
-					console.log(testList);
+					//console.log(test);
 					buildOneTestBlockLayout( scope, element );
 					buildTwoTestBlockLayout( scope, element );
 					buildThreeTestBlockLayout( scope, element );

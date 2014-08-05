@@ -9,7 +9,7 @@ Lego.factory( "buildFiveTestBlockLayout",
 
 				element.css( {
 					"position": "relative",
-					"width": "55px",
+					"width": "35px",
 					"height": "140px"
 				} );
 

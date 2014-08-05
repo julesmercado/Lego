@@ -5,19 +5,18 @@ Lego.directive( "toyBlock",
 			"scope": {
 				"projectName": "="
 			},
-			"restrict": "A",
+			"restrict": "AE",
 			"controller": "toyBlockController",
 
 			"template":
-				"<span ng-model='projectName'>{{projectName}}</span>"+
-				"<div ng-repeat='group in groupList'>" + 
+				"<span ng-model='projectName'></span>"+
+				"<div ng-repeat='group in groupList' style='float:left'>" + 
 					"<div group-block group-data='group'></div>" +
 				"</div>",
 
 			"link": function link( scope, element, attribute ){
-				element.css({
-					width: '55px'
-				});
+					//console.log($(projectName));
+					//console.log(projectName);
 			}
 		}
 	}

@@ -2,7 +2,7 @@ Lego.factory( "blocksBgColor",
 	[
 		function factory(  ){
 			return function blocksBgCOlor( scope, element ){
-				var testCaseId = scope.testData.testCaseID;
+				var testCaseId = scope.testData.id;
 				var testCaseState = scope.testData.state;
 
 				if(testCaseState){
